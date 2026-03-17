@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리(Woori) - 개인정보처리방침</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
+            background: #FFF9FB;
+            color: #2D2D2D;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .logo-circle {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 60px;
+            margin-bottom: 12px;
+        }
+        .logo-circle .c1 {
+            position: absolute;
+            width: 46px; height: 46px;
+            border-radius: 50%;
+            background: rgba(255, 181, 194, 0.5);
+            left: 6px; top: 4px;
+        }
+        .logo-circle .c2 {
+            position: absolute;
+            width: 38px; height: 38px;
+            border-radius: 50%;
+            background: rgba(142, 197, 252, 0.5);
+            right: 6px; top: 14px;
+        }
+        .logo h1 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .logo p {
+            font-size: 14px;
+            color: #8E8E93;
+            margin-top: 4px;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 36px;
+            margin-bottom: 12px;
+            color: #FFB5C2;
+        }
+        p, li {
+            font-size: 15px;
+            color: #4A4A4A;
+            margin-bottom: 8px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 12px;
+        }
+        .divider {
+            border: none;
+            border-top: 1px solid #F0E8EB;
+            margin: 32px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 48px;
+            font-size: 13px;
+            color: #8E8E93;
+        }
+        .lang-switch {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        .lang-switch a {
+            display: inline-block;
+            padding: 8px 20px;
+            margin: 0 4px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .lang-switch a.active {
+            background: #FFB5C2;
+            color: white;
+        }
+        .lang-switch a:not(.active) {
+            background: #F5F5F5;
+            color: #8E8E93;
+        }
+        .section-en { display: none; }
+
+        @media (prefers-color-scheme: dark) {
+            body { background: #1C1C1E; color: #F5F5F5; }
+            p, li { color: #D1D1D6; }
+            h2 { color: #FFB5C2; }
+            .divider { border-top-color: #3A3A3C; }
+            .lang-switch a:not(.active) { background: #2C2C2E; color: #8E8E93; }
+        }
+    </style>
+    <script>
+        function switchLang(lang) {
+            document.querySelector('.section-ko').style.display = lang === 'ko' ? 'block' : 'none';
+            document.querySelector('.section-en').style.display = lang === 'en' ? 'block' : 'none';
+            document.querySelectorAll('.lang-switch a').forEach(a => a.classList.remove('active'));
+            document.querySelector('.lang-' + lang).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="logo-circle">
+                <div class="c1"></div>
+                <div class="c2"></div>
+            </div>
+            <h1>우리 (Woori)</h1>
+            <p>둘만의 궤도</p>
+        </div>
+
+        <div class="lang-switch">
+            <a href="javascript:switchLang('ko')" class="lang-ko active">한국어</a>
+            <a href="javascript:switchLang('en')" class="lang-en">English</a>
+        </div>
+
+        <!-- 한국어 -->
+        <div class="section-ko">
+            <h2>개인정보처리방침</h2>
+            <p>시행일: 2026년 3월 17일</p>
+
+            <hr class="divider">
+
+            <h2>1. 수집하는 개인정보</h2>
+            <p>우리(Woori) 앱은 다음 정보를 처리합니다:</p>
+            <ul>
+                <li><strong>Apple ID</strong> — 로그인 및 iCloud 동기화 용도</li>
+                <li><strong>사용자 입력 데이터</strong> — 일정, 체크리스트, 피드(사진/글), 기념일, 위시리스트, 한마디 메모</li>
+                <li><strong>기기 타임존</strong> — 시차 표시 기능 용도</li>
+            </ul>
+
+            <h2>2. 개인정보의 저장</h2>
+            <p>모든 데이터는 사용자의 <strong>iCloud 계정(Apple CloudKit)</strong>에 저장됩니다.</p>
+            <ul>
+                <li>별도의 외부 서버를 운영하지 않습니다</li>
+                <li>개발자는 사용자 데이터에 접근할 수 없습니다</li>
+                <li>데이터는 Apple의 보안 인프라에 의해 보호됩니다</li>
+            </ul>
+
+            <h2>3. 데이터 공유</h2>
+            <p>앱 내에서 커플로 연결된 <strong>정확히 2명의 사용자</strong> 간에만 데이터가 공유됩니다.</p>
+            <ul>
+                <li>제3자에게 데이터를 제공하지 않습니다</li>
+                <li>광고 SDK를 사용하지 않습니다</li>
+                <li>분석/추적 도구를 사용하지 않습니다</li>
+            </ul>
+
+            <h2>4. 데이터 삭제</h2>
+            <ul>
+                <li>앱을 삭제하면 기기의 로컬 데이터가 삭제됩니다</li>
+                <li>iCloud 데이터는 <strong>설정 > Apple ID > iCloud > 저장 공간 관리</strong>에서 직접 삭제할 수 있습니다</li>
+            </ul>
+
+            <h2>5. 아동 보호</h2>
+            <p>본 앱은 만 14세 미만 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+
+            <h2>6. 변경 사항</h2>
+            <p>본 방침이 변경될 경우 앱 업데이트를 통해 안내드립니다.</p>
+
+            <h2>7. 문의</h2>
+            <p>개인정보 관련 문의: <strong>cozynye@gmail.com</strong></p>
+        </div>
+
+        <!-- English -->
+        <div class="section-en">
+            <h2>Privacy Policy</h2>
+            <p>Effective: March 17, 2026</p>
+
+            <hr class="divider">
+
+            <h2>1. Information We Collect</h2>
+            <p>Woori processes the following information:</p>
+            <ul>
+                <li><strong>Apple ID</strong> — For login and iCloud synchronization</li>
+                <li><strong>User-generated content</strong> — Calendar events, checklists, feed posts (photos/text), anniversaries, wishlists, and one-liner memos</li>
+                <li><strong>Device timezone</strong> — For timezone display feature</li>
+            </ul>
+
+            <h2>2. Data Storage</h2>
+            <p>All data is stored in the user's <strong>iCloud account (Apple CloudKit)</strong>.</p>
+            <ul>
+                <li>We do not operate any external servers</li>
+                <li>The developer cannot access user data</li>
+                <li>Data is protected by Apple's security infrastructure</li>
+            </ul>
+
+            <h2>3. Data Sharing</h2>
+            <p>Data is shared only between <strong>exactly 2 users</strong> connected as a couple within the app.</p>
+            <ul>
+                <li>We do not share data with third parties</li>
+                <li>We do not use advertising SDKs</li>
+                <li>We do not use analytics or tracking tools</li>
+            </ul>
+
+            <h2>4. Data Deletion</h2>
+            <ul>
+                <li>Deleting the app removes local data from the device</li>
+                <li>iCloud data can be deleted via <strong>Settings > Apple ID > iCloud > Manage Storage</strong></li>
+            </ul>
+
+            <h2>5. Children's Privacy</h2>
+            <p>This app does not knowingly collect personal information from children under 14.</p>
+
+            <h2>6. Changes</h2>
+            <p>Any changes to this policy will be communicated through app updates.</p>
+
+            <h2>7. Contact</h2>
+            <p>Privacy inquiries: <strong>cozynye@gmail.com</strong></p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 Woori. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
